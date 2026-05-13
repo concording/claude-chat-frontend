@@ -28,13 +28,13 @@ export default function LoginModal({ open, onLoginSuccess, onCancel }: LoginModa
   return (
     <Modal
       open={open}
-      onCancel={onCancel}
       footer={null}
-      title="Login"
+      title="登录"
       width={400}
       centered
-      closable={!!onCancel}
+      closable={false}
       maskClosable={false}
+      keyboard={false}
     >
       <Form
         layout="vertical"
